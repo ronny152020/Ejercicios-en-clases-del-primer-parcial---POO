@@ -1,0 +1,63 @@
+/* variable globales */
+/* la pseudoclase root,representa la raiz de un documento html */
+
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #004977;
+  --second-color: #2e1f54;
+  --text-color: #fff;
+  --container-width: 120px;
+}
+/* selector indica al nevagador que elemento o elementos
+debe aplicar un conjunto de reglas */
+
+/* selector por ejemplo: referencia a una etiqueta html */
+
+html {
+  /* sirve para cambiar el modelo de caja q x defecto tienen los
+    navegadores. */
+  box-sizing: border-box;
+  font-family: var(--main-color);
+  font-size: var(--font-size);
+  /* sirve para animar suavemente una transiccion cuand un usuario
+  hace click en un enlance */
+  scroll-behavior: smooth;
+}
+* *::before,
+*::after {
+  /* inherit hereda esta propiedad de su elemento padre */
+  box-sizing: inherit;
+}
+/* selector de elemeto */
+body {
+  margin: 0;
+  box-sizing: inherit;
+  font-size: inherit;
+  overflow-x: auto;
+}
+/* selector de tipo elemeto */
+img {
+  /* alargue el 100% del contenedor */
+  max-width: 100%;
+  height: auto;
+}
+/* selector de tipo elemeto */
+a {
+  text-decoration: none;
+  color: black;
+}
+/* selector tipo de elemento */
+li {
+  /*  eliminar el (.) en las opciones del menu */
+  list-style-type: none;
+}
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 40px;
+}

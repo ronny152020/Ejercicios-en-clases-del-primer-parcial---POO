@@ -1,0 +1,62 @@
+.header {
+  /* color de fondo */
+  background-color: var(--main-color);
+  position: fixed;
+  /* ocupe todo el ancho del viewport */
+  width: 100%;
+  top: 0%;
+}
+/* selector por clase en la etiqueta nav de las opciones
+del documento */
+.navegacion {
+  /*  colocar las cajas como si fueran caidas de tablas */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* selector de clase en la etiqueta logo */
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* espacios entre elementos */
+  gap: 5px;
+  /* color al texto */
+  color: var(--text-color);
+}
+.menu {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+}
+
+/* selector por clase para el menu */
+.menu li {
+  /* se separe las opciones 10px */
+  padding: 0px 10px;
+}
+/* selector por clase para personalizar el texto de las opciones */
+
+.menu a {
+  color: var(--text-color);
+  line-height: 50px;
+}
+/* medias query sirve para representar a nivel de pixeles
+la aplicacion se adapte a un tamaño especifico */
+
+@media (max-width: 750px) {
+  /* pagina(body) */
+  /* body{
+        background-color: blue;
+    }
+*/
+  .navegacion {
+    /* direccion de las opciones(celdas tomen orientacion vertial) */
+    flex-direction: column;
+  }
+  .menu {
+    /* direccion de las opciones (celdas tomen orientacion vertical) */
+    flex-direction: column;
+  }
+}
